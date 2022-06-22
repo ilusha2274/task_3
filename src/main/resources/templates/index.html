@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: flex">
+    <form method="post">
+        <input style="width: 120px;height:50px;font-size:25px;" name="variable1" placeholder="variable 1">
+        <input style="width: 60px;height:35px;font-size:15px;" name="operation" placeholder="operation">
+        <input style="width: 120px;height:50px;font-size:25px;" name="variable2" placeholder="variable 2">
+        <button style="width: 120px;height:50px;font-size:25px;" type="calculate" >calculate</button>
+    </form>
+</div>
+<p style="font-size:35px;" th:text="${result}"></p>
+</body>
+</html>
